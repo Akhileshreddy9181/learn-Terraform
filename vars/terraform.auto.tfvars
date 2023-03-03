@@ -1,0 +1,1 @@
+sample1="Sample Variable from auto.tfvars file"
