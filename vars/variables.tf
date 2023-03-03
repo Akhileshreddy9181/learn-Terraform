@@ -12,4 +12,16 @@ output "var_from_tfvars_file" {
   value = var.sample1
 }
 
-variable "input" {}
+#variable "input" {}
+
+variable "sample3" {
+  default = {
+    Name = "steve"
+    Number = 222
+    email = steve222@gmail.com
+  }
+}
+
+output "display_steve_info" {
+  value = var.sample3
+}
