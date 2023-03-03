@@ -35,5 +35,5 @@ variable "sample4" {
 }
 
 output "display_steve_info" {
-  value = "Variables in Sample2 is : ${var.sample2}, Variables in Sample3 is : ${var.sample3[0]}, Variables in Sample4 is : ${var.sample4[Name]}"
+  value = "Variables in Sample2 is : ${var.sample2}, Variables in Sample3 is : ${var.sample3[0]}, Variables in Sample4 is : ${var.sample}"
 }
