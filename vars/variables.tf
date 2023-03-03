@@ -18,7 +18,7 @@ variable "sample3" {
   default = {
     Name = "steve"
     Number = 222
-    email = steve222@gmail.com
+    email = "steve222@gmail.com"
   }
 }
 
