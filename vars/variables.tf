@@ -1,5 +1,5 @@
 variable "sample"{
-  default = 100
+  default = 234
 }
 
 output "My_Variable_is" {
@@ -35,5 +35,5 @@ variable "sample4" {
 }
 
 output "display_steve_info" {
-  value = "Variables in Sample2 is : ${var.sample2}, Variables in Sample3 is : ${var.sample3[0]}, Variables in Sample4 is : ${var.sample}"
+  value = "Variables in Sample2 is : ${var.sample2}, Variables in Sample3 is : ${var.sample3[3]}, Variables in Sample4 is : ${var.sample}"
 }
