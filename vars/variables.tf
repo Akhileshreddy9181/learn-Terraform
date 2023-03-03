@@ -11,3 +11,5 @@ variable "sample1" {}
 output "var_from_tfvars_file" {
   value = var.sample1
 }
+
+variable "input" {}
