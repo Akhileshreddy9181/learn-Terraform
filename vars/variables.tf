@@ -1,5 +1,6 @@
 variable "sample"{
-  default = "Hello World"
+  Name = "Raju"
+  Reg_No = 100
 }
 
 output "My_Variable_is" {
