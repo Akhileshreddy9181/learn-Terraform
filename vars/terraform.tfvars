@@ -1,0 +1,1 @@
+sample1="Sample Variable from .tfvars file"
