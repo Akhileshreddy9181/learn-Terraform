@@ -5,17 +5,21 @@ data "aws_ami" "ami" {
 }
 
 
-resource "aws_instance" "frontend" {
-  count                  = length(var.list_of_instances)
-  ami                    = "ami-0a017d8ceb274537d"
-  instance_type          = "t3.micro"
+resource "aws_instance" "ec2" {
+  count                  = length(var.name_of_instances)
+  ami                    = data.aws_ami.ami.image_id
+  instance_type          = var.type_of_instances[count.index]
   vpc_security_group_ids = ["sg-006c61c287cf5f4d5"]
   tags = {
-    Name = var.list_of_instances[count.index]
+    Name = var.name_of_instances[count.index]
   }
 
 }
 
-variable "list_of_instances" {
-  default = ["frontend", "catalogue", "mongodb", "user", "cart"]
+variable "name_of_instances" {
+  default = ["frontend", "catalogue"]
+}
+
+variable "type_of_instances" {
+  default = ["t3.micro", "t3.small"]
 }
