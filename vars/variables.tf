@@ -52,5 +52,5 @@ variable "d"{
 }
 
 output "display_course_name" {
-  value = "The course names are : ${var.d.*.course_name}"
+  value = var.d.*.course_name
 }
