@@ -4,7 +4,7 @@ resource "aws_instance" "node1" {
   vpc_security_group_ids = ["sg-006c61c287cf5f4d5"]
 
   tags = {
-    Name = prom-test-server
+    Name = "prom-test-server"
   }
 }
 
@@ -14,6 +14,6 @@ resource "aws_instance" "node2" {
   vpc_security_group_ids = ["sg-006c61c287cf5f4d5"]
 
   tags = {
-    Name = prom-node-server
+    Name = "prom-node-server"
   }
 }
