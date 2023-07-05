@@ -15,5 +15,9 @@ data "aws_security_group" "def_secgrp_id" {
     values = ["allow-all"]
   }
 
+  /*filter {
+    name   = "vpc-id"
+    values = [data.aws_vpc.default_vpc.id]
+  }*/
 
 }
